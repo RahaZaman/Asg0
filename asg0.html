@@ -1,0 +1,86 @@
+<!-- 
+/* References / Resources: */
+
+/* Mozilla Web Docs */
+
+/* HTML tags */
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/strong
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/button
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/option
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>asg0 - Vector Library</title>
+    </head>
+
+    <body onload="main()">
+    <canvas id="example" width="400" height="400">
+        Please use a browser that supports "canvas"
+    </canvas>
+
+    <br><br>
+
+    <!-- Vector 1 Inputs (x and y) -->
+
+    <strong>v1:</strong>
+
+    <label for="xInput">x</label>
+    <input type="number" id="xInput" step="0.01" name="x">
+
+    <label for="yInput">y</label>
+    <input type="number" id="yInput" step="0.01" name="y">
+    
+    <br>
+
+    <!-- Vector 2 Inputs (x and y) -->
+
+    <strong>v2:</strong>
+
+    <label for="xInput2">x</label>
+    <input type="number" id="xInput2" step="0.01" name="x">
+
+    <label for="yInput2">y</label>
+    <input type="number" id="yInput2" step="0.01" name="y">
+
+    <br><br>
+
+    <!-- Draw button / input field for vector -->
+    <input type="button" value="Draw" onclick="handleDrawEvent()">
+
+    <br><br>
+
+    <!-- Operation selector -->
+    <label for="operationSelect">Operation:</label>
+    <select id="operationSelect">
+        <option value="add">Add</option>
+        <option value="sub">Subtract</option>
+        <option value="mul">Multiply</option>
+        <option value="div">Divide</option>
+        <option value="mag">Magnitude</option>
+        <option value="nor">Normalize</option>
+        <option value="angle">Angle between</option>
+        <option value="area">Area</option>
+    </select>
+
+    <!-- Scalar input field -->
+    <label for="scalarInput">Scalar:</label>
+    <input type="number" id="scalarInput" step="0.01">
+
+    <br><br>
+
+    <!-- Draw button / input field for draw operations -->
+    <input type="button" value="Draw" onclick="handleDrawOperationEvent()">
+
+    <!-- Loading Scripts -->
+    <script src="asg0.js"></script>
+    <script src="lib/cuon-matrix-cse160.js"></script>
+
+</body>
+</html>
