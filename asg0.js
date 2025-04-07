@@ -32,7 +32,7 @@ function drawVector(v, color) {
 
     let ctx = document.getElementById("example").getContext("2d");
 
-    ctx.beginPath(); // Start path
+    ctx.beginPath(); // Starts a path
     ctx.strokeStyle = color;
 
     // Move to center of the canvas (200, 200)
